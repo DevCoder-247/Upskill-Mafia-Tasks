@@ -17,6 +17,11 @@ app.use(express.json()); // Enable JSON parsing
 
 app.use(bodyParser.json());
 
+app.get("/", (req, res) => {
+  res.send("API is running ✅");
+});
+
+
 // Routes
 app.use("/api/todos", todoRoutes);
 
