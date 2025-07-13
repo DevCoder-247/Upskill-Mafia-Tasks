@@ -12,10 +12,13 @@ const app = express();
 connectDB();
 
 // Middleware
-app.use(cors({ origin: "http://localhost:5173" })); 
+app.use(cors({
+  origin: ["http://localhost:5173", "https://your-frontend.onrender.com"]
+}));
+
 app.use(express.json()); // Enable JSON parsing
 
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
   res.send("API is running ✅");
