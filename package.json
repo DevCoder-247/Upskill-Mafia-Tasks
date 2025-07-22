@@ -4,7 +4,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "start server.js"
+    "start": "start server.js",
+    "vercel-build": "npm install"
   },
   "author": "",
   "license": "ISC",
