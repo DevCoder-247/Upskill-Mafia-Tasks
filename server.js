@@ -13,7 +13,7 @@ connectDB();
 
 // Middleware
 app.use(cors({
-  origin: ["http://localhost:5173", "https://task-28-2nl1bhqwg-abhays-projects-596787af.vercel.app"]
+  origin: ["http://localhost:5173", "https://task-28-b-abhays-projects-596787af.vercel.app"]
 }));
 
 app.use(express.json()); // Enable JSON parsing
